@@ -36,24 +36,24 @@ export function ChatPanel({
 
   const exampleMessages = [
     {
-      heading: 'What are the',
-      subheading: 'trending memecoins today?',
-      message: `What are the trending memecoins today?`
+      heading: 'I have no tech experience',
+      subheading: 'I have no tech experience beyond using my phone and computer for basic tasks but i want to know how i can leverage cutting edge technology to help me with my business.',
+      message: `I have no tech experience beyond using my phone and computer for basic tasks but i want to know how i can leverage cutting edge technology to help me with my business.`
     },
     {
-      heading: 'What is the price of',
-      subheading: '$DOGE right now?',
-      message: 'What is the price of $DOGE right now?'
+      heading: 'I have limited tech experience',
+      subheading: 'I can use the software that i run my business with currently but I dont really have experience beyond that.',
+      message: `I can use the software that i run my business with currently but I dont really have experience beyond that.`
     },
     {
-      heading: 'I would like to buy',
-      subheading: '42 $DOGE',
-      message: `I would like to buy 42 $DOGE`
+      heading: 'I have knowledge of automated workflow methods and software integration',
+      subheading: 'I have knowledge of automated workflow methods and software integration but want to see how Marauda may be able to help me with my business',
+      message: `I have knowledge of automated workflow methods and software integration but want to see how Marauda may be able to help me with my business.`
     },
     {
-      heading: 'What are some',
-      subheading: `recent events about $DOGE?`,
-      message: `What are some recent events about $DOGE?`
+      heading: 'I have advanced tech experience.',
+      subheading: `I have advanced knowledge of AI/ML models, software engineering for integration and workflow automation, data analysis, DevOps and other technologies. I am curious how Marauda may be able to help me further.`,
+      message: `I have advanced knowledge of AI/ML models, software engineering for integration and workflow automation, data analysis, DevOps and other technologies. I am curious how Marauda may be able to help me further.`
     }
   ]
 
@@ -65,7 +65,7 @@ export function ChatPanel({
       />
 
       <div className="mx-auto sm:max-w-2xl sm:px-4">
-        <div className="mb-4 grid grid-cols-2 gap-2 px-4 sm:px-0">
+        <div className="mb-4 flex flex-col gap-10 px-4 sm:px-0 align-items-start">
           {messages.length === 0 &&
             exampleMessages.map((example, index) => (
               <div
@@ -92,8 +92,8 @@ export function ChatPanel({
                   ])
                 }}
               >
-                <div className="text-sm font-semibold">{example.heading}</div>
-                <div className="text-sm text-zinc-600">
+                <div className="text-md font-semibold ">{example.heading}</div>
+                <div className="text-md font-light">
                   {example.subheading}
                 </div>
               </div>

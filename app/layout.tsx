@@ -13,10 +13,10 @@ export const metadata = {
     ? new URL(`https://${process.env.VERCEL_URL}`)
     : undefined,
   title: {
-    default: 'Next.js AI Chatbot',
-    template: `%s - Next.js AI Chatbot`
+    default: 'Marauda Business Analyst',
+    template: `Marauda Business Analyst`
   },
-  description: 'An AI-powered chatbot template built with Next.js and Vercel.',
+  description: 'Marauda Intelligent Business Assistant',
   icons: {
     icon: '/favicon.ico',
     shortcut: '/favicon-16x16.png',
@@ -48,9 +48,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <Toaster position="top-center" />
         <Providers
           attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
+          defaultTheme="dark"
+          enable-system
+          disable-transition-on-change
         >
           <div className="flex flex-col min-h-screen">
             <Header />
